@@ -1,0 +1,280 @@
+/* general styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  /* position: relative; */
+  font-family: "Poppins", sans-serif;
+  transition: all 0.05s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* site loader */
+
+h1.percentageDisplay {
+  font-size: 8.5rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.4rem;
+  margin-top: 18.5rem;
+  margin-left: 4rem;
+}
+
+div.progressBar {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  height: 10%;
+  border-radius: 5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: beige;
+  box-shadow: 4.5px 6px 5px grey;
+}
+
+div.progressBar > div.progressState {
+  content: "";
+  width: 0.5%;
+  height: 10%;
+  background-color: aqua;
+  animation: load 7s linear 1s forwards;
+}
+
+@keyframes load {
+  3% {
+    width: 3%;
+  }
+  23% {
+    width: 23%;
+  }
+  27% {
+    width: 25%;
+  }
+  48% {
+    width: 48%;
+  }
+  52% {
+    width: 50%;
+  }
+  73% {
+    width: 73%;
+  }
+  77% {
+    width: 75%;
+  }
+  98% {
+    width: 98%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+section.loadSite > p.loadingText {
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-left: 4rem;
+}
+
+/* main site */
+
+/* hero section */
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+}
+
+.mainSite {
+  display: none;
+}
+
+.mainSite.activeMainSite {
+  display: block;
+}
+
+section.heroSection {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("image/heroSection.jpg") no-repeat center center/cover;
+}
+
+header > nav {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  color: white;
+}
+
+nav > div.nav-content {
+  display: flex;
+  gap: 3.5rem;
+}
+
+div.nav-bar {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+div.nav-bar > div {
+  width: 2.5rem;
+  height: 0.25rem;
+  background-color: black;
+}
+
+div.nav-bar.activeNavBar {
+  display: flex;
+}
+
+div.nav-content.activeNavContent {
+  display: none;
+}
+
+div.nav-content.activeNavContent > a {
+  display: none;
+}
+
+div.nav-content.activeNavContent > a:nth-child(1) {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+div.nav-content.activeNavContent > a:nth-child(2) {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+div.nav-content.activeNavContent > a:nth-child(3) {
+  display: block;
+}
+
+div.nav-content.activeNavContent > a:nth-child(4) {
+  display: block;
+}
+
+div.nav-content.activeNavContent > a:nth-child(5) {
+  display: block;
+}
+
+div.background-image p {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 3.5rem;
+  padding-bottom: 9rem;
+  line-height: 6rem;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+/* about section */
+
+section#about {
+  padding: 5rem 7rem;
+  background-color: deeppink;
+  color: white;
+}
+
+section#about > h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-bottom: 3rem;
+}
+
+section#about > p {
+  font-size: 1.15rem;
+  letter-spacing: 0.13rem;
+  margin-top: 1.5rem;
+  line-height: 2.3rem;
+}
+
+/* well wishers */
+
+section#well-wishers {
+  padding: 3rem 4.5rem;
+}
+
+section#well-wishers > h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-bottom: 3rem;
+}
+
+section#well-wishers p {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.11rem;
+  margin-top: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.left,
+.left > figcaption {
+  color: #ff6b6b;
+  text-align: left;
+}
+
+.right {
+  background-color: deeppink;
+}
+
+.right,
+.right > figcaption {
+  color: white;
+  text-align: center;
+}
+
+.right > figure {
+  text-align: right;
+}
+
+.right p {
+  text-align: left;
+}
+
+section#well-wishers > div {
+  padding: 3rem 4.5rem;
+  border-radius: 1rem;
+  box-shadow: 7px 9px 3px grey;
+  margin-bottom: 6rem;
+}
+
+section#well-wishers img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section#well-wishers figure {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+section#well-wishers figcaption {
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-top: 1.2rem;
+}
