@@ -9,13 +9,25 @@
 
 body {
   /* position: relative; */
-  font-family: "Poppins", sans-serif;
+  font-family: "Dancing Script", cursive;
   transition: all 0.05s ease;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+}
+
+/* colors in decreasing intensity */
+:root {
+  --purple-one: 10002b;
+  --purple-two: 240046;
+  --purple-three: 3c096c;
+  --purple-four: 5a189a;
+  --purple-five: 7b2cbf;
+  --purple-six: 9d4edd;
+  --purple-seven: c77dff;
+  --purple-eight: e0aaff;
 }
 
 /* site loader */
@@ -177,6 +189,7 @@ div.nav-content.activeNavContent > a:nth-child(5) {
 
 div.background-image p {
   text-align: center;
+  font-family: "Quintessential", cursive;
   font-size: 4rem;
   font-weight: bold;
   margin-top: 3.5rem;
@@ -190,11 +203,12 @@ div.background-image p {
 
 section#about {
   padding: 5rem 7rem;
-  background-color: deeppink;
+  background-color: #ff1493;
   color: white;
 }
 
-section#about > h1 {
+section#about > h1,
+section#grid-one > h1 {
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 0.15rem;
@@ -206,6 +220,48 @@ section#about > p {
   letter-spacing: 0.13rem;
   margin-top: 1.5rem;
   line-height: 2.3rem;
+}
+
+/* grid-one */
+
+section#grid-one,
+section#grid-two {
+  padding: 5rem 4.5rem;
+  padding-left: 8rem;
+}
+
+section#grid-one > h1,
+section#grid-two > h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-bottom: 3rem;
+}
+
+div.photo-item {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(4, 150px);
+  /* column-gap: 1.5rem; */
+}
+
+div.photo-item img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+div.photo-item > div:first-child,
+img.span,
+img.child {
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-items: center;
+  align-items: center;
+}
+
+img.fourty-two {
+  grid-column: span 2;
 }
 
 /* well wishers */
@@ -277,4 +333,32 @@ section#well-wishers figcaption {
   font-weight: bold;
   letter-spacing: 0.15rem;
   margin-top: 1.2rem;
+}
+
+/* wish list */
+
+section#wish-list {
+  padding: 3rem;
+  color: white;
+  background-color: deeppink;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+#wish-list > h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.8rem;
+}
+
+/* footer */
+
+footer {
+  padding: 1.5rem 2rem;
+  background-color: white;
+  color: deeppink;
+  line-height: 3.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
 }
