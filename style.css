@@ -373,7 +373,7 @@ footer {
 
 /* mobile responsiveness */
 
-@media (max-width: 48rem) {
+@media screen and (max-width: 48rem) {
   html {
     font-size: 50%;
   }
@@ -608,8 +608,7 @@ footer {
 
 /* tab responsiveness */
 
-@media (min-width: 48rem) and (max-width: 64rem),
-  screen and (orientation: landscape) {
+@media screen and (max-width: 64rem), screen and (orientation: landscape) {
   html {
     font-size: 50%;
   }
