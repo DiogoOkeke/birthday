@@ -20,14 +20,11 @@ html {
 
 /* colors in decreasing intensity */
 :root {
-  --purple-one: 10002b;
-  --purple-two: 240046;
-  --purple-three: 3c096c;
-  --purple-four: 5a189a;
-  --purple-five: 7b2cbf;
-  --purple-six: 9d4edd;
-  --purple-seven: c77dff;
-  --purple-eight: e0aaff;
+  --soft-blush: #ffe5ecff;
+  --pastel-pink: #ffc2d1ff;
+  --cherry-blossom: #ffb3c6ff;
+  --cotton-candy: #ff8fabff;
+  --petal-rouge: #fb6f92ff;
 }
 
 /* site loader */
@@ -35,7 +32,7 @@ html {
 h1.percentageDisplay {
   font-size: 8.5rem;
   font-weight: bold;
-  color: black;
+  color: var(--cotton-candy);
   letter-spacing: 0.4rem;
   margin-top: 18.5rem;
   margin-left: 4rem;
@@ -49,7 +46,7 @@ div.progressBar {
   border-radius: 5rem;
   position: relative;
   overflow: hidden;
-  background-color: beige;
+  background-color: var(--soft-blush);
   box-shadow: 4.5px 6px 5px grey;
 }
 
@@ -57,7 +54,7 @@ div.progressBar > div.progressState {
   content: "";
   width: 0.5%;
   height: 10%;
-  background-color: aqua;
+  background-color: var(--petal-rouge);
   animation: load 7s linear 1s forwards;
 }
 
@@ -96,6 +93,7 @@ section.loadSite > p.loadingText {
   font-weight: bold;
   letter-spacing: 0.15rem;
   margin-left: 4rem;
+  color: var(--cotton-candy);
 }
 
 /* main site */
@@ -153,7 +151,7 @@ div.nav-bar > div {
   background-color: black;
 }
 
-div.nav-bar.activeNavBar {
+/* div.nav-bar.activeNavBar {
   display: flex;
 }
 
@@ -172,7 +170,8 @@ div.nav-content.activeNavContent > a:nth-child(1) {
 
 div.nav-content.activeNavContent > a:nth-child(2) {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5
+  rem;
 }
 
 div.nav-content.activeNavContent > a:nth-child(3) {
@@ -185,7 +184,7 @@ div.nav-content.activeNavContent > a:nth-child(4) {
 
 div.nav-content.activeNavContent > a:nth-child(5) {
   display: block;
-}
+} */
 
 div.background-image p {
   text-align: center;
@@ -203,7 +202,7 @@ div.background-image p {
 
 section#about {
   padding: 5rem 7rem;
-  background-color: #ff1493;
+  background-color: var(--petal-rouge);
   color: white;
 }
 
@@ -211,22 +210,26 @@ section#about > h1,
 section#grid-one > h1 {
   font-size: 1.8rem;
   font-weight: bold;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.25rem;
   margin-bottom: 3rem;
+  color: white;
+  filter: drop-shadow(2px 4px 6px var(--black));
+  -webkit-text-stroke-width: 2.5px;
 }
 
 section#about > p {
   font-size: 1.15rem;
-  letter-spacing: 0.13rem;
+  letter-spacing: 0.15rem;
   margin-top: 1.5rem;
   line-height: 2.3rem;
+  color: white;
 }
 
 /* grid-one */
 
 section#grid-one,
 section#grid-two {
-  padding: 5rem 4.5rem;
+  padding: 6rem 4.5rem;
   padding-left: 8rem;
 }
 
@@ -236,6 +239,7 @@ section#grid-two > h1 {
   font-weight: bold;
   letter-spacing: 0.15rem;
   margin-bottom: 3rem;
+  color: var(--petal-rouge);
 }
 
 div.photo-item {
@@ -267,7 +271,8 @@ img.fourty-two {
 /* well wishers */
 
 section#well-wishers {
-  padding: 3rem 4.5rem;
+  padding: 5rem 4.5rem;
+  background-color: var(--soft-blush);
 }
 
 section#well-wishers > h1 {
@@ -275,6 +280,7 @@ section#well-wishers > h1 {
   font-weight: bold;
   letter-spacing: 0.15rem;
   margin-bottom: 3rem;
+  color: var(--petal-rouge);
 }
 
 section#well-wishers p {
@@ -287,12 +293,14 @@ section#well-wishers p {
 
 .left,
 .left > figcaption {
-  color: #ff6b6b;
+  color: var(--petal-rouge);
+  background-color: white;
   text-align: left;
 }
 
 .right {
-  background-color: deeppink;
+  background-color: var(--petal-rouge);
+  color: white;
 }
 
 .right,
@@ -340,7 +348,7 @@ section#well-wishers figcaption {
 section#wish-list {
   padding: 3rem;
   color: white;
-  background-color: deeppink;
+  background-color: var(--petal-rouge);
   line-height: 3rem;
   letter-spacing: 0.2rem;
 }
@@ -357,8 +365,395 @@ section#wish-list {
 footer {
   padding: 1.5rem 2rem;
   background-color: white;
-  color: deeppink;
+  color: var(--petal-rouge);
   line-height: 3.5rem;
   letter-spacing: 0.2rem;
   text-align: center;
+}
+
+/* mobile responsiveness */
+
+@media (max-width: 48rem) {
+  html {
+    font-size: 50%;
+  }
+
+  h1.percentageDisplay {
+    margin-top: 45rem;
+  }
+
+  section.heroSection {
+    height: 100vh;
+  }
+
+  header > nav {
+    padding: 3rem 4.35rem;
+    position: relative;
+  }
+
+  div.nav-bar {
+    display: flex;
+  }
+
+  div.nav-bar > div {
+    width: 8.3vw;
+    height: 0.6vh;
+    background-color: white;
+    border-radius: 9px;
+  }
+
+  nav > div.nav-content {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 13rem;
+    right: 5.58rem;
+    background-color: white;
+    color: var(--petal-rouge);
+    padding: 4rem 7rem;
+    border-radius: 0.8rem;
+    z-index: 4;
+    width: 80vw;
+    /* height: 40vh; */
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  div.first-bar,
+  div.second-bar,
+  div.third-bar {
+    transition: all 0.7s linear;
+  }
+
+  div.second-bar {
+    margin-block: 0.4rem;
+  }
+
+  .nav-bar.true {
+    margin-top: 0.8rem;
+  }
+
+  .first-bar.true {
+    transform: rotate(45deg) translateY(14px);
+    transform-origin: center;
+  }
+
+  .second-bar.true {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+
+  .third-bar.true {
+    transform: rotate(-45deg) translateY(-15px);
+    transform-origin: center;
+  }
+
+  div.nav-content a:first-child {
+    margin-top: 2rem;
+  }
+
+  div.nav-content a {
+    margin-bottom: 2rem;
+    color: pink;
+    font-size: 1.65rem;
+  }
+
+  .nav-content.activeNavContent {
+    display: flex;
+    animation: display 1.5s ease;
+  }
+
+  @keyframes display {
+    from {
+      right: -50rem;
+    }
+  }
+
+  header > nav {
+    padding: 4.5rem 3.5rem;
+  }
+
+  div.background-image p {
+    margin-top: 11rem;
+  }
+
+  div.background-image p {
+    /* display: none; */
+    font-size: 4.5rem;
+    letter-spacing: 0.35rem;
+    line-height: 7rem;
+    /* position: relative;
+    left: -5rem; */
+    transition: all 0.5s ease;
+    animation: reveal 1.5s ease;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* .nav-content.removeNavContent{
+    animation: remove 1.5s ease;
+  }
+
+  @keyframes remove{
+    to{
+      right: 30rem;
+    }
+  } */
+  section#about h1,
+  section#well-wishers h1,
+  section#grid-one h1,
+  section#grid-two h1 {
+    font-size: 2.5rem;
+  }
+
+  section#well-wishers figcaption {
+    font-size: 1.4rem;
+  }
+
+  section#about p,
+  section#well-wishers p,
+  section#wish-list p {
+    font-size: 1.55rem;
+  }
+
+  section#grid-one,
+  section#grid-two {
+    padding: 5rem 2rem;
+    padding-left: 4rem;
+  }
+
+  section#grid-two {
+    padding-left: 6rem;
+  }
+
+  div.photo-item {
+    width: 50%;
+    grid-template-columns: repeat(3, 120px);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+  }
+
+  div.photo-item img.span-image {
+    grid-row: span 2;
+  }
+
+  div.photo-item img.last-image {
+    /* grid-column: span 2; */
+  }
+
+  section#grid-two div.photo-grid div.mobile {
+    width: 60%;
+    grid-template-columns: repeat(4, 70px);
+  }
+
+  section#well-wishers div.left {
+    opacity: 0;
+    /* animation: slideInLeft 1s ease-out forwards; */
+    transition: all 0.5s ease;
+  }
+
+  section#well-wishers div.right {
+    opacity: 0;
+    /* animation: slideInRight 1s ease-out forwards; */
+    transition: all 0.5s ease;
+  }
+
+  .left.active {
+    opacity: 1;
+    animation: slideInLeft 1s ease-out forwards;
+  }
+
+  .right.active {
+    opacity: 1;
+    animation: slideInRight 1s ease-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* tab responsiveness */
+
+@media (min-width: 48rem) and (max-width: 64rem),
+  screen and (orientation: landscape) {
+  html {
+    font-size: 50%;
+  }
+
+  h1.percentageDisplay {
+    margin-top: 100rem;
+  }
+
+  p.loadingText {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  header > nav {
+    padding: 5rem 3rem;
+  }
+
+  nav > p {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5%;
+    width: 100vw;
+  }
+
+  div.nav-bar {
+    display: none;
+  }
+
+  nav > p {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  nav > div.nav-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: auto;
+    gap: 2.5rem;
+    margin-top: 0 !important;
+    top: 0 !important;
+    position: static;
+    /* margin-top: -12rem; */
+    /* margin-left: 15rem; */
+    /* position: relative;
+    top: 13rem;
+    right: 5.58rem; */
+    background-color: transparent;
+    color: white;
+    border-radius: none;
+    /* box-shadow: 4.5px 6px 5px grey; */
+    /* height: 40vh; */
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  div.nav-content a {
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  section.heroSection {
+    height: 70vh;
+  }
+
+  div.background-image p {
+    /* display: none; */
+    font-size: 8rem;
+    letter-spacing: 0.56rem;
+    line-height: 11rem;
+    margin-top: 7.5rem;
+    /* position: relative;
+    left: -5rem; */
+  }
+
+  section#about h1,
+  section#well-wishers h1,
+  section#grid-one h1,
+  section#grid-two h1,
+  section#wish-list h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.85rem;
+  }
+
+  section#grid-one h1 {
+    margin-left: 4rem;
+  }
+
+  section#well-wishers h1 {
+    margin-block: 5rem;
+  }
+
+  section#well-wishers figcaption {
+    font-size: 1.7rem;
+  }
+
+  section#about p,
+  section#well-wishers p,
+  section#wish-list p {
+    font-size: 2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  section#about {
+    padding: 7rem 9.5rem;
+  }
+
+  section#grid-one,
+  section#grid-two {
+    padding: 7rem 4rem;
+  }
+
+  div.photo-item {
+    width: 100%;
+    grid-template-columns: repeat(4, 150px);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+    padding-left: 5rem;
+  }
+
+  section#grid-two div.photo-grid div.mobile {
+    width: 100%;
+    grid-template-columns: repeat(4, 150px);
+    padding-left: 5rem;
+  }
+
+  section#well-wishers {
+    padding: 6rem 9.5rem;
+  }
+
+  section#well-wishers > div {
+    padding: 4rem 8.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
 }

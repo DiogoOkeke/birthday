@@ -103,3 +103,50 @@ function updateDate() {
 }
 
 updateDate();
+
+// nav content
+
+let navBar = document.querySelector(".nav-bar");
+let navContent = document.querySelector(".nav-content");
+let firstBar = document.querySelector(".first-bar");
+let secondBar = document.querySelector(".second-bar");
+let thirdBar = document.querySelector(".third-bar");
+
+let clicked = false;
+
+navBar.onclick = () => {
+  if (!clicked) {
+    navContent.classList.add("activeNavContent");
+    firstBar.classList.add("true");
+    secondBar.classList.add("true");
+    thirdBar.classList.add("true");
+    navBar.classList.add("true");
+    navBar.style.top = "3.1rem";
+    clicked = true;
+    console.log("diogo");
+  } else {
+    navContent.classList.remove("activeNavContent");
+    navContent.classList.add("removeNavContent");
+    secondBar.classList.remove("true");
+    firstBar.classList.remove("true");
+    thirdBar.classList.remove("true");
+    navBar.classList.remove("true");
+    navBar.style.top = "1.6rem";
+    clicked = false;
+  }
+};
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+
+document.querySelectorAll(".left, .right").forEach((div) => {
+  observer.observe(div);
+});
