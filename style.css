@@ -9,7 +9,7 @@
 
 body {
   /* position: relative; */
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Quintessential", Arial, Helvetica, sans-serif;
   transition: all 0.05s ease;
 }
 
@@ -533,16 +533,16 @@ footer {
   }
 
   h1.percentageDisplay {
-    margin-top: 65rem;
+    margin-top: 60rem;
   }
 
   
 section.loadSite > p.loadingText {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: bold;
   letter-spacing: 0.15rem;
   margin-left: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   color: var(--cotton-candy);
 }
   
@@ -717,8 +717,8 @@ section.loadSite > p.loadingText {
   section#well-wishers p,
   section#wish-list p {
     font-size: 1.45rem;
-    letter-spacing: 0.45rem;
-    line-height: 3.5rem;
+    letter-spacing: 0.3rem;
+    line-height: 5rem;
   }
 
   section#grid-one,
