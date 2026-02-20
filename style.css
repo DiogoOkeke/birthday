@@ -577,9 +577,9 @@ section.loadSite > p.loadingText {
     display: none;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 9rem auto;
+    margin: 20rem auto !important;
     position: absolute;
-    top: 18rem;
+    top: 28rem;
     right: 5.58rem;
     background-color: white;
     color: var(--petal-rouge);
