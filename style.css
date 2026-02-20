@@ -664,7 +664,7 @@ footer {
   }
 
   section#about {
-  padding: 4rem 1.8rem;
+  padding: 3rem 1.8rem;
   background-color: var(--petal-rouge);
   color: white;
   }
@@ -704,13 +704,13 @@ footer {
   section#about p,
   section#well-wishers p,
   section#wish-list p {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 
   section#grid-one,
   section#grid-two {
-    padding: 5rem 2rem;
-    padding-left: 2rem;
+    padding: 5rem .8rem;
+    padding-left: .8rem;
   }
 
   section#grid-two {
