@@ -9,7 +9,7 @@
 
 body {
   /* position: relative; */
-  font-family: "Dancing Script", cursive;
+  font-family: "Ubuntu", sans-serif;
   transition: all 0.05s ease;
 }
 
@@ -529,19 +529,19 @@ footer {
 
 @media screen and (max-width: 48rem) {
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
 
   h1.percentageDisplay {
-    margin-top: 45rem;
+    margin-top: 85rem;
   }
 
   section.heroSection {
-    height: 100vh;
+    height: 95vh;
   }
 
   header > nav {
-    padding: 3rem 4.35rem;
+    padding: 4rem 4.35rem;
     position: relative;
   }
 
@@ -562,7 +562,7 @@ footer {
     gap: 1.5rem;
     margin: 0 auto;
     position: absolute;
-    top: 13rem;
+    top: 18rem;
     right: 5.58rem;
     background-color: white;
     color: var(--petal-rouge);
@@ -637,7 +637,7 @@ footer {
 
   div.background-image p {
     /* display: none; */
-    font-size: 4.5rem;
+    font-size: 7.5rem;
     letter-spacing: 0.35rem;
     line-height: 7rem;
     /* position: relative;
@@ -670,23 +670,28 @@ footer {
   section#well-wishers h1,
   section#grid-one h1,
   section#grid-two h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+  }
+
+  section#well-wishers {
+    padding-left:  1rem;
+    padding-right: 1rem;
   }
 
   section#well-wishers figcaption {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
   }
 
   section#about p,
   section#well-wishers p,
   section#wish-list p {
-    font-size: 1.55rem;
+    font-size: 1.9rem;
   }
 
   section#grid-one,
   section#grid-two {
     padding: 5rem 2rem;
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
 
   section#grid-two {
