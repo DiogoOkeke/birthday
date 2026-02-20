@@ -536,6 +536,17 @@ footer {
     margin-top: 65rem;
   }
 
+  
+section.loadSite > p.loadingText {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+  color: var(--cotton-candy);
+}
+  
+
   section.heroSection {
     height: 95vh;
   }
@@ -578,7 +589,7 @@ footer {
     width: 80vw;
     /* height: 40vh; */
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 18rem;
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -643,8 +654,8 @@ footer {
 
   div.background-image p {
     /* display: none; */
-    font-size: 6.5rem;
-    letter-spacing: 0.55rem;
+    font-size: 5.5rem;
+    letter-spacing: 0.35rem;
     line-height: 8.5rem;
     /* position: relative;
     left: -5rem; */
@@ -664,7 +675,7 @@ footer {
   }
 
   section#about {
-  padding: 3rem 1.8rem;
+  padding: 2.8rem 2rem;
   background-color: var(--petal-rouge);
   color: white;
   }
@@ -683,15 +694,16 @@ footer {
   section#grid-one h1,
   section#grid-two h1 {
     font-size: 2.5rem;
+    letter-spacing: .35rem;
   }
 
   section#well-wishers {
-    padding-left:  1.5rem;
-    padding-right: 1.5rem;
+    padding-left:  2rem;
+    padding-right: 2rem;
   }
 
   section#well-wishers > div {
-  padding: 3rem 1.5rem;
+  padding: 3rem 2rem;
   border-radius: 1rem;
   box-shadow: 7px 9px 3px grey;
   margin-bottom: 6rem;
@@ -704,13 +716,15 @@ footer {
   section#about p,
   section#well-wishers p,
   section#wish-list p {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
+    letter-spacing: 0.45rem;
+    line-height: 2rem;
   }
 
   section#grid-one,
   section#grid-two {
-    padding: 5rem .8rem;
-    padding-left: .8rem;
+    padding: 5rem 0rem;
+    padding-left: 0rem;
   }
 
   section#grid-two {
