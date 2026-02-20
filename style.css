@@ -370,6 +370,160 @@ footer {
   letter-spacing: 0.2rem;
   text-align: center;
 }
+  
+
+/* tab responsiveness */
+
+@media screen and (max-width: 64rem) {
+  html {
+    font-size: 50%;
+  }
+
+  h1.percentageDisplay {
+    margin-top: 100rem;
+  }
+
+  p.loadingText {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  header > nav {
+    padding: 5rem 3rem;
+  }
+
+  nav > p {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5%;
+    width: 100vw;
+  }
+
+  div.nav-bar {
+    display: none;
+  }
+
+  nav > p {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  nav > div.nav-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: auto;
+    gap: 2.5rem;
+    margin-top: 0 !important;
+    top: 0 !important;
+    position: static;
+    /* margin-top: -12rem; */
+    /* margin-left: 15rem; */
+    /* position: relative;
+    top: 13rem;
+    right: 5.58rem; */
+    background-color: transparent;
+    color: white;
+    border-radius: none;
+    /* box-shadow: 4.5px 6px 5px grey; */
+    /* height: 40vh; */
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  div.nav-content a {
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  section.heroSection {
+    height: 70vh;
+  }
+
+  div.background-image p {
+    /* display: none; */
+    font-size: 8rem;
+    letter-spacing: 0.56rem;
+    line-height: 11rem;
+    margin-top: 7.5rem;
+    /* position: relative;
+    left: -5rem; */
+  }
+
+  section#about h1,
+  section#well-wishers h1,
+  section#grid-one h1,
+  section#grid-two h1,
+  section#wish-list h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.85rem;
+  }
+
+  section#grid-one h1 {
+    margin-left: 4rem;
+  }
+
+  section#well-wishers h1 {
+    margin-block: 5rem;
+  }
+
+  section#well-wishers figcaption {
+    font-size: 1.7rem;
+  }
+
+  section#about p,
+  section#well-wishers p,
+  section#wish-list p {
+    font-size: 2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  section#about {
+    padding: 7rem 9.5rem;
+  }
+
+  section#grid-one,
+  section#grid-two {
+    padding: 7rem 4rem;
+  }
+
+  div.photo-item {
+    width: 100%;
+    grid-template-columns: repeat(4, 150px);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+    padding-left: 5rem;
+  }
+
+  section#grid-two div.photo-grid div.mobile {
+    width: 100%;
+    grid-template-columns: repeat(4, 150px);
+    padding-left: 5rem;
+  }
+
+  section#well-wishers {
+    padding: 6rem 9.5rem;
+  }
+
+  section#well-wishers > div {
+    padding: 4rem 8.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+
 
 /* mobile responsiveness */
 
@@ -603,156 +757,5 @@ footer {
       transform: translateX(0);
       opacity: 1;
     }
-  }
-}
-
-/* tab responsiveness */
-
-@media screen and (max-width: 64rem), screen and (orientation: landscape) {
-  html {
-    font-size: 50%;
-  }
-
-  h1.percentageDisplay {
-    margin-top: 100rem;
-  }
-
-  p.loadingText {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
-
-  header > nav {
-    padding: 5rem 3rem;
-  }
-
-  nav > p {
-    font-size: 2rem;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 5%;
-    width: 100vw;
-  }
-
-  div.nav-bar {
-    display: none;
-  }
-
-  nav > p {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  nav > div.nav-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    width: auto;
-    gap: 2.5rem;
-    margin-top: 0 !important;
-    top: 0 !important;
-    position: static;
-    /* margin-top: -12rem; */
-    /* margin-left: 15rem; */
-    /* position: relative;
-    top: 13rem;
-    right: 5.58rem; */
-    background-color: transparent;
-    color: white;
-    border-radius: none;
-    /* box-shadow: 4.5px 6px 5px grey; */
-    /* height: 40vh; */
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-
-  div.nav-content a {
-    color: white;
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  section.heroSection {
-    height: 70vh;
-  }
-
-  div.background-image p {
-    /* display: none; */
-    font-size: 8rem;
-    letter-spacing: 0.56rem;
-    line-height: 11rem;
-    margin-top: 7.5rem;
-    /* position: relative;
-    left: -5rem; */
-  }
-
-  section#about h1,
-  section#well-wishers h1,
-  section#grid-one h1,
-  section#grid-two h1,
-  section#wish-list h1 {
-    font-size: 3.5rem;
-    letter-spacing: 0.85rem;
-  }
-
-  section#grid-one h1 {
-    margin-left: 4rem;
-  }
-
-  section#well-wishers h1 {
-    margin-block: 5rem;
-  }
-
-  section#well-wishers figcaption {
-    font-size: 1.7rem;
-  }
-
-  section#about p,
-  section#well-wishers p,
-  section#wish-list p {
-    font-size: 2rem;
-    line-height: 3.8rem;
-    letter-spacing: 0.3rem;
-  }
-
-  section#about {
-    padding: 7rem 9.5rem;
-  }
-
-  section#grid-one,
-  section#grid-two {
-    padding: 7rem 4rem;
-  }
-
-  div.photo-item {
-    width: 100%;
-    grid-template-columns: repeat(4, 150px);
-    column-gap: 1.25rem;
-    row-gap: 1.25rem;
-    padding-left: 5rem;
-  }
-
-  section#grid-two div.photo-grid div.mobile {
-    width: 100%;
-    grid-template-columns: repeat(4, 150px);
-    padding-left: 5rem;
-  }
-
-  section#well-wishers {
-    padding: 6rem 9.5rem;
-  }
-
-  section#well-wishers > div {
-    padding: 4rem 8.5rem;
-  }
-
-  footer p {
-    font-size: 1rem;
   }
 }
