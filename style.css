@@ -558,6 +558,9 @@ section.loadSite > p.loadingText {
 
   nav > p {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     word-wrap: break-word;
     white-space: normal;
@@ -651,7 +654,7 @@ section.loadSite > p.loadingText {
   }
 
   div.background-image p {
-    margin-top: 11rem;
+    margin-top: 8rem;
   }
 
   div.background-image p {
@@ -739,8 +742,8 @@ section.loadSite > p.loadingText {
   }
 
   div.photo-item {
-    width: 50%;
-    grid-template-columns: repeat(2, 100px);
+    width: 40%;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1.25rem;
     row-gap: 1.25rem;
   }
@@ -755,7 +758,7 @@ section.loadSite > p.loadingText {
 
   section#grid-two div.photo-grid div.mobile {
     width: 50%;
-    grid-template-columns: repeat(2, 70px);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   section#well-wishers div.left {
