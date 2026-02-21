@@ -704,7 +704,8 @@ section.loadSite > p.loadingText {
 
   section#about p{
     font-weight: bold;
-
+  }
+  
   section#well-wishers {
     padding-top: 2.8rem;
     padding-left:  2rem;
