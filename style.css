@@ -736,7 +736,7 @@ section.loadSite > p.loadingText {
 
   section#grid-one,
   section#grid-two {
-    padding: 5rem 0rem;
+    padding: 5rem 0rem !important;
     padding-left: -1rem;
     padding-top: 2.8rem;
   }
@@ -755,6 +755,7 @@ section.loadSite > p.loadingText {
     column-gap: 1rem;
     row-gap: 1rem;
     margin-left: -1rem;
+    justify-content: center !important;
   }
 
   div.photo-item img.span-image {
