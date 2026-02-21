@@ -548,17 +548,20 @@ section.loadSite > p.loadingText {
   
 
   section.heroSection {
-    height: 95vh;
+    height: 80vh;
   }
 
   header > nav {
-    padding: 4rem 4.35rem;
+    padding: 4rem 2rem;
     position: relative;
   }
 
   nav > p {
     display: flex;
     flex-wrap: wrap;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
   
 
@@ -580,7 +583,7 @@ section.loadSite > p.loadingText {
     margin: 20rem auto !important;
     position: absolute;
     top: 28rem;
-    right: 5.58rem;
+    right: 4.5rem;
     background-color: white;
     color: var(--petal-rouge);
     padding: 4rem 7rem;
@@ -655,7 +658,7 @@ section.loadSite > p.loadingText {
     /* display: none; */
     font-size: 3rem;
     letter-spacing: 0.45rem;
-    line-height: 9rem;
+    line-height: 8rem;
     /* position: relative;
     left: -5rem; */
     transition: all 0.5s ease;
@@ -693,8 +696,11 @@ section.loadSite > p.loadingText {
   section#grid-one h1,
   section#grid-two h1 {
     font-size: 2.5rem;
-    letter-spacing: .35rem;
+    letter-spacing: .5rem;
   }
+
+  section#about p{
+    font-weight: bold;
 
   section#well-wishers {
     padding-top: 2.8rem;
@@ -734,7 +740,7 @@ section.loadSite > p.loadingText {
 
   div.photo-item {
     width: 50%;
-    grid-template-columns: repeat(3, 120px);
+    grid-template-columns: repeat(2, 100px);
     column-gap: 1.25rem;
     row-gap: 1.25rem;
   }
@@ -748,8 +754,8 @@ section.loadSite > p.loadingText {
   }
 
   section#grid-two div.photo-grid div.mobile {
-    width: 60%;
-    grid-template-columns: repeat(4, 70px);
+    width: 50%;
+    grid-template-columns: repeat(2, 70px);
   }
 
   section#well-wishers div.left {
