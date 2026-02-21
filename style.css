@@ -742,7 +742,7 @@ section.loadSite > p.loadingText {
   }
 
   section#grid-one {
-    padding-left: -4.5rem;
+    padding-left: -6.5rem;
   }
 
   section#grid-two {
@@ -765,7 +765,7 @@ section.loadSite > p.loadingText {
   }
 
   section#grid-two div.photo-grid div.mobile {
-    width: 40%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
