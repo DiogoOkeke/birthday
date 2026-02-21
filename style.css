@@ -587,13 +587,13 @@ section.loadSite > p.loadingText {
     margin: 20rem auto !important;
     position: absolute;
     top: 28rem;
-    right: 4.5rem;
+    right: 3rem;
     background-color: white;
     color: var(--petal-rouge);
     padding: 4rem 7rem;
     border-radius: 0.8rem;
     z-index: 4;
-    width: 80vw;
+    width: 87vw;
     /* height: 40vh; */
     text-align: center;
     font-weight: bold;
@@ -615,7 +615,7 @@ section.loadSite > p.loadingText {
   }
 
   .first-bar.true {
-    transform: rotate(45deg) translateY(14px);
+    transform: rotate(45deg) translateY(15px);
     transform-origin: center;
   }
 
@@ -625,7 +625,7 @@ section.loadSite > p.loadingText {
   }
 
   .third-bar.true {
-    transform: rotate(-45deg) translateY(-15px);
+    transform: rotate(-45deg) translateY(-18px);
     transform-origin: center;
   }
 
@@ -744,10 +744,10 @@ section.loadSite > p.loadingText {
   }
 
   div.photo-item {
-    width: 40%;
+    width: 70%;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1.25rem;
-    row-gap: 1.25rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
   }
 
   div.photo-item img.span-image {
@@ -759,7 +759,7 @@ section.loadSite > p.loadingText {
   }
 
   section#grid-two div.photo-grid div.mobile {
-    width: 50%;
+    width: 70%;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
