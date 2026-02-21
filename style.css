@@ -552,7 +552,7 @@ section.loadSite > p.loadingText {
   }
 
   header > nav {
-    padding: 4rem 2rem;
+    padding: 4rem 1.1rem;
     position: relative;
   }
 
@@ -701,11 +701,12 @@ section.loadSite > p.loadingText {
   section#grid-one h1,
   section#grid-two h1 {
     font-size: 2.5rem;
-    letter-spacing: .5rem;
+    letter-spacing: 1rem;
   }
 
   section#about p{
     font-weight: bold;
+    line-height: 3rem;
   }
   
   section#well-wishers {
