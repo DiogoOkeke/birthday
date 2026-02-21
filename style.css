@@ -146,7 +146,7 @@ div.nav-bar {
 }
 
 div.nav-bar > div {
-  width: 2.5rem;
+  width: 4rem;
   height: 0.25rem;
   background-color: black;
 }
@@ -741,7 +741,7 @@ section.loadSite > p.loadingText {
   }
 
   section#grid-one{
-    padding-left: -2.5rem;
+    padding-left: -4.5rem;
 
   section#grid-two {
     padding-left: 6rem;
@@ -763,7 +763,7 @@ section.loadSite > p.loadingText {
   }
 
   section#grid-two div.photo-grid div.mobile {
-    width: 100%;
+    width: 40%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: span 1;
     grid-column: span 1;
