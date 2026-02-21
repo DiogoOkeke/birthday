@@ -766,8 +766,6 @@ section.loadSite > p.loadingText {
   section#grid-two div.photo-grid div.mobile {
     width: 40%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: span 1;
-    grid-column: span 1;
   }
 
   section#well-wishers div.left {
