@@ -530,6 +530,10 @@ footer {
 @media screen and (max-width: 48rem) {
   html {
     font-size: 70%;
+    
+  }
+
+  * {
     cursor: default;
   }
 
