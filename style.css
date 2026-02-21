@@ -146,7 +146,7 @@ div.nav-bar {
 }
 
 div.nav-bar > div {
-  width: 4rem;
+  width: 5rem;
   height: 0.25rem;
   background-color: black;
 }
@@ -741,8 +741,9 @@ section.loadSite > p.loadingText {
     padding-top: 2.8rem;
   }
 
-  section#grid-one{
+  section#grid-one {
     padding-left: -4.5rem;
+  }
 
   section#grid-two {
     padding-left: 6rem;
