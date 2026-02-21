@@ -565,6 +565,7 @@ section.loadSite > p.loadingText {
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word;
+    line-height: .8rem;
   }
   
 
