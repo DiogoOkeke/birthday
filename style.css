@@ -374,7 +374,7 @@ footer {
 
 /* tab responsiveness */
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 50rem) {
   html {
     font-size: 50%;
   }
